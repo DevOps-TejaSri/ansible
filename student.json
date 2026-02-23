@@ -1,0 +1,13 @@
+{
+  "firstName": "Teja sri",
+  "dob": "1999-01-05",
+  "address": [
+    {
+      "type": "perm",
+      "flatNumber": 104,
+      "street": "bala nagar",
+      "city": "hyderabad"
+    }
+  ],
+  "skills": ["java", "devops", "cloud"]
+}

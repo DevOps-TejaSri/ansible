@@ -1,0 +1,8 @@
+<!-- student object -->
+
+<student>
+   <FirstName>Teja sri</FirstName>
+   <DOB>01-05-1999</DOB>
+   <Email>tejasri.rachakonda@gmail.com</Email>
+   <Address>Balanagar</Addres>
+</student>
