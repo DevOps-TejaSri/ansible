@@ -6,18 +6,18 @@
     DURATION: 140 #int
     IS_LIVE: true #bool
     DETAILS: #dictionary
-       MONTHS: 4
-       TRAINER: "SIvakumar Reddy"
+      MONTHS: 4
+      TRAINER: "SIvakumar Reddy"
     TOPICS: #list
-    -Linux
-    -Shell
-    -Ansible
+      - Linux
+      - Shell
+      - Ansible
   tasks:
-  - name: print variables
-    ansible.builtin.debug:
-       msg:
-         Program: {{ PROGRAM }}
-         Duration: {{ DURATION }}
-         IS Live?: {{ IS_LIVE }}
-         Details: {{ DETAILS }}
-         Topics: {{ TOPICS }}
+    - name: print variables
+      ansible.builtin.debug:
+        msg:
+          Program: { { PROGRAM } }
+          Duration: { { DURATION } }
+          IS Live?: { { IS_LIVE } }
+          Details: { { DETAILS } }
+          Topics: { { TOPICS } }
