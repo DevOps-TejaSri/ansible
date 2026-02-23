@@ -1,6 +1,6 @@
 - name: demo on data types
   hosts: local
-  connections: local
+  connection: local
   vars:
     PROGRAM: "Devops with Aws" #string
     DURATION: 140 #int
