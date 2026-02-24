@@ -3,10 +3,14 @@
   connection: local
   tasks:
     - name: command module test
-      #ansible.builtin.command: cat /etc/passwd | grep root
+      #ansible.builtin.command: cat /etc/passwd | grep root(command does not support |)
       ansible.builtin.shell: cat /etc/passwd | grep root
       register: users_output
 
     - name: print users_output
       ansible.builtin.debug:
         msg: "{{ users_output }}"
+
+    - name: command module test
+      ansible.builtin.command: ls -ltr
+      register: users_output

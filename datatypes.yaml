@@ -19,5 +19,5 @@
           program: "{{ PROGRAM }}"
           Duration: "{{ DURATION }}"
           Is live?: "{{ IS_LIVE }}"
-          DETAILS: "{{ DETAILS }}"
+          Details: "{{ DETAILS }}"
           Topics: "{{ TOPICS }}"
