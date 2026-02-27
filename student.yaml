@@ -1,14 +1,14 @@
 - name: "Teja sri"
   dob: "1999-05-01"
   mobileNumber: 1234567890
-  address: "Balanagar"
-  - flatNumber : 104
-    street: "bala nagar"
-    city: hyderbad
-    type: current
+  address:
+    - flatNumber: 104
+      street: "bala nagar"
+      city: hyderabad
+      type: current
 
-  -  flatNumber : 104
-    street: "bala nagar"
-    city: hyderbad
-    type: perm
+    - flatNumber: 104
+      street: "bala nagar"
+      city: hyderabad
+      type: perm
 -
