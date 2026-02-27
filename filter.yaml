@@ -3,6 +3,7 @@
   connection: local
   vars:
     topics: linux, shell, ansible, terraform
+    course: "Devops with ansible"
     tagsList:
       name: ansible
       project: roboshop
@@ -19,3 +20,19 @@
     - name: convert map to list
       ansible.builtin.debug:
         msg: "{{ tagsList | dict2items }}"
+
+    - name: read students yaml
+      ansible.builtin.set_fact: #setting a variable
+        student_yaml: "{{ lookup('file', 'student.yaml' ) | from_yaml }}"
+
+    - name: convert YAML to JSON
+      ansible.builtin.debug:
+        msg: "{{ student_yaml | to_nice_json }}"
+
+    - name: convert to upper case
+      ansible.builtin.debug:
+        msg: "{{ course | upper }}"
+
+    - name: convert to lower case
+      ansible.builtin.debug:
+        msg: "{{ course | lower }}"
